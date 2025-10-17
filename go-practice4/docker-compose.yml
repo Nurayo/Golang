@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:15
+    container_name: pg_practice4
+    restart: always
+    environment:
+      POSTGRES_USER: nuray
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: practice4
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
