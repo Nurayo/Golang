@@ -6,3 +6,6 @@
 *.out
 *.exe
 *.test
+
+# docker postgres data
+go-practice4/data/
